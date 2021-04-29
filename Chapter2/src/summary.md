@@ -1,0 +1,4 @@
+- Awesome techniques.
+- Easy to read
+- Easy to handle methods and overrides
+- Java 8 baby...
