@@ -1,0 +1,3 @@
+- Declarative -> More concise and readable
+- Composable -> Greater flexibility
+- Parallelized -> Better performance

@@ -1,0 +1,4 @@
+A wonderfull dummy data
+To test lambda function
+From chapter 3\n
+yes you hear*9294d right.!!!

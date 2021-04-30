@@ -44,6 +44,8 @@ public class FilteringDemo {
         List<Integer> evenValues = GenericFilter.filter(ints, (i) -> {
             return i % 2 == 0;
         });
+
+
 //        System.out.println(redApples);
 //        System.out.println(greenApples);
 //        System.out.println(evenValues);
@@ -53,7 +55,9 @@ public class FilteringDemo {
             return Math.max(o1.getWeight(), o2.getWeight());
         });
         System.out.println(apples);
+
     }
+
 
     public static <T> List<T> filt(List<T> list, Predicate<T> pred) {
         List<T> ts = new ArrayList<>();
