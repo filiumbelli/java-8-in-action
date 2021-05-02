@@ -11,15 +11,24 @@ public class Trader {
         Trader mario = new Trader("Mario", "Milan");
         Trader alan = new Trader("Alan", "Cambridge");
         Trader brian = new Trader("Brian", "Cambridge");
-        traders = Arrays.asList(raoul, mario, alan, brian);
+        Trader konichiva = new Trader("Konichiva", "Hong Kongo");
+        traders = Arrays.asList(raoul, mario, alan, brian, konichiva);
         transactions = Arrays.asList(
-                new Transaction(brian, 2011, 300),
-                new Transaction(raoul, 2012, 1000),
-                new Transaction(raoul, 2011, 400),
-                new Transaction(mario, 2012, 710),
-                new Transaction(mario, 2012, 700),
-                new Transaction(alan, 2012, 950));
+                new Transaction(brian, 2011, 300, Currency.DLR),
+                new Transaction(raoul, 2012, 1000, Currency.TRL),
+                new Transaction(raoul, 2011, 400, Currency.DLR),
+                new Transaction(mario, 2012, 710, Currency.EUR),
+                new Transaction(mario, 2012, 700, Currency.EUR),
+                new Transaction(alan, 2012, 950, Currency.DLR),
+                new Transaction(konichiva, 2015, 52000, Currency.YEN));
 
+    }
+
+    enum Currency {
+        DLR,
+        EUR,
+        TRL,
+        YEN
     }
 
     public Trader(String name, String city) {
